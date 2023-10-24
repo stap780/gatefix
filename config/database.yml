@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: gatefix_development
+  pool: 5
+  username: administrator
+  password:
+  template: template0
+
+test:
+  adapter: postgresql
+  host: localhost
+  encoding: unicode
+  database: gatefix_test
+  pool: 5
+  username: administrator
+  password:
+  template: template0
+
+# production:
+#   adapter: postgresql
+#   host: localhost
+#   encoding: unicode
+#   database: gatefix_production
+#   pool: 5
+#   username: gatefix
+#   password: <%= ENV['gatefix_DATABASE_PASSWORD'] %>
+#   template: template0
