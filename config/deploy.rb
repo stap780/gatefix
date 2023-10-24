@@ -1,6 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.3"
 
+
 set :branch, 'main'
 set :application, 'gatefix'
 set :repo_url, 'git@github.com:stap780/gatefix.git'
