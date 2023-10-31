@@ -23,7 +23,8 @@ gem 'roo'
 gem 'roo-xls'
 gem 'whenever', require: false
 gem 'figaro'
-gem 'pg', '~> 0.18'
+#gem 'pg', '~> 0.18'
+gem "pg", "~> 1.1"
 gem 'loofah', '~>2.19.1'
 # gem 'libv8-node', '~> 15.14', '>= 15.14.0.0'
 # gem 'mini_racer'
