@@ -275,7 +275,6 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   loofah (~> 2.19.1)
-  nokogiri
   pg (~> 0.18)
   rails (~> 5.2.4, >= 5.2.4.4)
   ransack
