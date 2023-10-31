@@ -3,7 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # ruby '2.4.4'
 ruby '3.2.0'
-gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
+# gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
+gem "rails", "~> 7.0.5.1"
+
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 
@@ -15,20 +17,18 @@ gem 'devise'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'rest-client'
-# gem 'nokogiri'
 gem 'cocoon'
 gem 'will_paginate', '~> 3.3'
 gem 'ransack'
-gem 'roo'
-gem 'roo-xls'
 gem 'whenever', require: false
 gem 'figaro'
 #gem 'pg', '~> 0.18'
 gem "pg", "~> 1.1"
-gem 'loofah', '~>2.19.1'
+# gem 'loofah', '~>2.19.1'
 # gem 'libv8-node', '~> 15.14', '>= 15.14.0.0'
 # gem 'mini_racer'
 gem 'unicorn'
+gem 'puma'
 
 gem 'bcrypt_pbkdf', '< 2.0', :require => false
 gem 'ed25519', '~> 1.2', '>= 1.2.4'
