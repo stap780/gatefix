@@ -3,9 +3,9 @@ lock "~> 3.18.0"
 
 
 set :branch, 'main'
-set :application, 'gatefix'
+set :application, 'gatefixnew'
 set :repo_url, 'git@github.com:stap780/gatefix.git'
-set :deploy_to, '/var/www/gatefix'
+set :deploy_to, '/var/www/gatefixnew'
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 set :format, :pretty
