@@ -109,7 +109,9 @@ class OrdersController < ApplicationController
 
     if payment_data["status"] == "CANCELLED"
       test = Bank.first.app_type
-      search_order = test ? payment_data["paymentId"] : payment_data["reference"]
+      # search_order = test ? payment_data["paymentId"] : payment_data["reference"]
+      search_order = payment_data["paymentId"].present? ? payment_data["paymentId"] : payment_data["reference"]
+
 
       order = Order.find_by_order_id(search_order)
       order.update!(status: 'CANCELLED')
