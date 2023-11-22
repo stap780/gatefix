@@ -2,6 +2,9 @@ class Order < ApplicationRecord
 
 validates :order_id , uniqueness: true
 
+def self.ransackable_attributes(auth_object = nil)
+  ["amount", "created_at", "description", "email", "id", "ip", "key", "order_id", "phone", "shop_id", "signature", "status", "transaction_id", "updated_at"]
+end
 
 def self.send_delivery_data(data)
     delivery = data["fields_values"].select{ |field| field['name'] == 'smartpost'}[0]['value']
